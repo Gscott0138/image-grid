@@ -25,7 +25,7 @@ div {
 }
 
 img {
-  display: flex;
+  display: block;
   width: 100%;
 }
 
@@ -33,6 +33,27 @@ img {
   display: none;
 }
 
-.photo:nth-child(4) {
+.photo:nth-child(5) {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .photo:nth-child(2) {
+    display: block;
+  }
+
+  .photo:nth-child(5) {
+    display: block;
+  }
+
+  .photo:nth-child(2), .photo:nth-child(3), .photo:nth-child(4), .photo:nth-child(5) {
+    width: 50%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
